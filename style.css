@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'poppins, sans-serif';
+    box-sizing: border-box;
+
+}
+body{
+    background-color: black;
+    color: white;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Image/Background.png);
+    background-size: cover;
+    background-position: center;
+}
+.continer{
+    padding: 10px 5%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.Logo{
+    width: 140px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #61D4FF;
+    position: absolute;
+    left: 2px;
+    bottom: -6px;
+    transition: width 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 15%;
+    font-size: 20px;
+}
+.header-text h3{
+    font-size: 20px;
+    margin-top: 15px;
+    font-weight: 100;
+}
+
+.header-text h1{
+    font-size: 55px;
+    margin-top: 15px;
+    font-weight: 700;
+}
+.header-text p{
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: 100;
+}
+.header-text span{
+    color: #61D4FF;
+}
+.header-text span:hover{
+    color: #5bffdb;
+}
+
+/*-----------------------Service-------------------------------*/
+
+#service{
+    padding: 10px 5%;
+}
+.sub-text{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+}
+.sub-text:hover{
+    color: #f59ee2;
+
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-row: 25px;
+    grid-gap: 40px; /* Adjust spacing between items */
+    margin-top: 50px; /* Add padding for aesthetics (optional) */
+  }
+
+  .services-list div{
+    background: #636363;
+    padding: 40px;
+    font-size: 15px;
+    font-weight: 300;
+    border-radius: 16px;
+    transition: background 0.5s, transform 0.5s ;
+  }
+  .services-list div img{
+    margin-bottom: 20px;
+  }
+  .services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  .services-list div a{
+    text-decoration: none;
+    color:white;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  .services-list div:hover{
+    background: #73deff;
+    transform: translateY(-10px);
+    color: black;
+  }
+  .services-list div a:hover{
+    color: black;
+  }
+
+/*-----------------------About Me-------------------------------*/
+#about{
+    margin-top: 50px;
+    padding: 10px 5%;
+    color: white;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+     flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 16px;
+    transition: transform 0.5s;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.about-col-2 p{
+    margin-top: 20px;
+}
+.sub-title{
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+}
+
+.my-title{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.my-titles{
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.my-titles::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #61D4FF;
+    position: absolute;
+    left: 2px;
+    bottom: -10px;
+    transition: width 0.5s;
+}
+.my-titles.active-link::after{
+    width: 50%;
+}
+
+.my-content ul li{
+    list-style: none;
+    margin: 10px 0;
+
+}
+.my-content ul li span{
+    padding-bottom: 50px;
+    color: #4aff77;
+    font-size: 15px;
+}
+
+.my-content {
+    display: none;
+
+}
+.my-content.active-content{
+    display: block;
+}
+.about-col-1:hover img{
+    transform:scale(1.03);
+}
+
+/*----------------------------------portfolio----------------*/
+
+.portfolio{
+    margin-top: 50px;
+    padding: 10px 5%;
+    color: white;
+    text-align: center;
+}
+.portfolio:hover h1{
+    color: #ffa2c9;
+}
+.work-list{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-row: 25px;
+        grid-gap: 40px; /* Adjust spacing between items */
+        margin-top: 50px; /* Add padding for aesthetics (optional) */
+}
+.work{
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+
+}
+.work img{
+    width: 100%;
+    border-radius: 16px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(102, 173, 255));
+    border-radius: 16px;
+    position: absolute;
+    left: 0;
+    bottom:0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 15px;
+    transition: heigh 0.10s;
+}
+.layer h3{
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 20px;
+}
+.layer p{
+    margin-bottom: 20px;
+}
+.layer button{
+    padding: 5px;
+    color: #000;
+    background: #f1ecff;
+    border: none;
+    border-radius: 5px;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #f59ee2 ;
+    padding: 14px 50px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #f8f5ff;
+    transform: background 0.05s;
+}
+.btn:hover{
+    color: black;
+    background: #ff006a;
+}
+.aboutme{
+    margin-top: 50px;
+    padding: 10px 5%;
+    color: white;
+}
+.aboutme h1{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+/*------------------------Contact Me --------------------------*/
+
+.contact{
+    margin-top: 50px;
+    padding: 10px 5%;
+    color: white;
+}
+.contact p{
+    margin-top:10px;
+    font-size: 18px;
+}
+.social-icon{
+    margin-top: 10px;
+}
+.contact-left{
+    flex-basis: 35%;
+
+}
+.contact-rigth{
+    flex-basis: 60%;
+
+}
+..contact-left p{
+    font-size: 15px;
+}
+.contact-left p i{
+    color: #fffdfd;
+    margin-right: 15px;
+}
+.social-icon a{
+    text-align: none;
+    font-size: 20px;
+    display: inline-block;
+    margin: 5px;
+    color: #fffafe;
+    transition: transform 0.5s;
+}
+.social-icon a:hover{
+    margin: 5px;
+    color: #ff98ea;
+    transform: translateY(-5px);
+}
+.contact-rigth form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #dad3d3;
+    padding: 20px;
+    margin: 20px, 0;
+    color: #000000;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.btn2{
+    font-size: 20px;
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #fff8fe ;
+    padding: 14px 50px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000000;
+    transform: background 0.05s;
+}
+.btn2:hover{
+    background: rgb(248, 40, 196);
+}
+/*-----------------------Contactus Page------------------------------*/
+.Contactuss{
+    margin-top: 50px;
+    padding: 10px 5%;
+    color: white;
+}
+.Contactuss h1{
+    margin-bottom: 10px;
+    text-align: center;
+}

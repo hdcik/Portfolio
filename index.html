@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/86eed6e761.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="continer">
+            <nav>
+                <img src="Image/Logo.png" class="Logo">
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/">Home</a></li>
+                    <li><a href="aboutme.html">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="#">Service</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h3>HTML / CSS/ JS / UI / UX</h3>
+                <h1>Hi, I'm <br> H. D. C. I. <span>Kumara</span> <br> From Sri Lanka</h1>
+                <p>Full stack development</p>
+            </div>
+        </div>
+    </div>
+    <!--------------------------Service-------------------------->
+
+    <div id="service">
+        <div class="container">
+            <h1 class="sub-text">My Services</h1>
+            <div class="services-list">
+
+                <div>
+                    <img src="Image/front .png" alt="">
+                    <h2>Front-End Development</h2>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum autem vel, ullam id voluptatem
+                        similique adipisci minima tempora aliquid, harum repellendus pariatur ipsa. Eveniet consequuntur
+                        nam molestiae unde? Ea, atque!</p>
+                    <br>
+                    <a href="#">Lern More</a>
+                </div>
+
+                <div>
+                    <img src="Image/backend.png" alt="">
+                    <h2>Back-End Development</h2>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum autem vel, ullam id voluptatem
+                        similique adipisci minima tempora aliquid, harum repellendus pariatur ipsa. Eveniet consequuntur
+                        nam molestiae unde? Ea, atque!</p>
+                    <br>
+                    <a href="#">Lern More</a>
+                </div>
+
+                <div>
+                    <img src="Image/Databass.png" alt="">
+                    <h2>Database Management</h2>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum autem vel, ullam id voluptatem
+                        similique adipisci minima tempora aliquid, harum repellendus pariatur ipsa. Eveniet consequuntur
+                        nam molestiae unde? Ea, atque!</p>
+                    <br>
+                    <a href="#">Lern More</a>
+                </div>
+
+                <div>
+                    <img src="Image/Tools.png" alt="">
+                    <h2>Tools & Technologies</h2>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum autem vel, ullam id voluptatem
+                        similique adipisci minima tempora aliquid, harum repellendus pariatur ipsa. Eveniet consequuntur
+                        nam molestiae unde? Ea, atque!</p>
+                    <br>
+                    <a href="#">Lern More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--------------------------About Me-------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Image/About .png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias atque explicabo doloremque
+                        animi ipsa voluptas tenetur exercitationem, praesentium, nostrum provident ex hic consectetur
+                        quidem facere sed repellat officiis vero quae!
+                        Nulla magni dicta voluptatem reprehenderit quo impedit eius aperiam deleniti totam corrupti
+                        voluptates nihil quia quis voluptate distinctio accusantium iste blanditiis, veniam beatae, eum
+                        facilis, sequi esse tempora dolorum? Reiciendis?</p>
+
+                    <div class="my-title">
+                        <p class="my-titles active-link" onclick="openttab('skill')">My Skill</p>
+                        <p class="my-titles" onclick="openttab('Experience')">My Experience</p>
+                        <p class="my-titles" onclick="openttab('Education')">My Education</p>
+                    </div>
+
+                    <div class="my-content active-content" id="skill">
+                        <ul>
+                            <li><span>Front-End Development</span> <br> HTML, CSS, JavaScript, React, Angular</li>
+                            <li><span>Back-End Development</span> <br> Node.js, Express, Django, Ruby on Rails</li>
+                            <li><span>Database Management</span> <br> SQL, NoSQL, PostgreSQL, MongoDB</li>
+                            <li><span>Tools & Technologies</span> <br> version control (Git), CI/CD pipelines, cloud
+                                services (AWS, Azure)</li>
+                        </ul>
+                    </div>
+
+                    <div class="my-content" id="Experience">
+                        <ul>
+                            <li><span>2020 - Start</span> <br> Icet Company </li>
+                            <li><span>2021 - 2022</span> <br> Freelancing</li>
+                            <li><span>2022 - 2023</span> <br> Open My Company </li>
+                            <li><span>2023 - 2024</span> <br> My Secend Company Open </li>
+                        </ul>
+                    </div>
+
+                    <div class="my-content" id="Education">
+                        <ul>
+                            <li><span>2017 - Start </span> <br> ICET Full Stack Development Course</li>
+                            <li><span>2017 - 2018 </span> <br> C/M University Diploma </li>
+                            <li><span>2018 - 2019</span> <br> Icet Full stack development</li>
+                            <li><span>2019 - 2020</span> <br> C/K Private Campus Diploma</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!--------------------------Portfolio--------------------->
+
+    <div class="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Image/FrontEnd Development.png">
+
+                    <div class="layer">
+                        <h3>FrontEnd Development</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore vitae necessitatibus hic
+                            aperiam doloremque, autem magni officia nisi fugit dignissimos cum illum nulla aspernatur
+                            magnam sequi expedita ad velit ullam?</p>
+                            <button type="button" class="btn btn-primary">More Details</button>
+                    </div>
+
+                </div>
+
+                <div class="work">
+                    <img src="Image/BackEnd Development.png">
+
+                    <div class="layer">
+                        <h3>FrontEnd Development</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore vitae necessitatibus hic
+                            aperiam doloremque, autem magni officia nisi fugit dignissimos cum illum nulla aspernatur
+                            magnam sequi expedita ad velit ullam?</p>
+                            <button type="button" class="btn btn-primary">More Details</button>
+                    </div>
+
+                </div>
+
+                <div class="work">
+                    <img src="Image/Database Management.png">
+
+                    <div class="layer">
+                        <h3>FrontEnd Development</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore vitae necessitatibus hic
+                            aperiam doloremque, autem magni officia nisi fugit dignissimos cum illum nulla aspernatur
+                            magnam sequi expedita ad velit ullam?</p>
+                            <button type="button" class="btn btn-primary">More Details</button>
+                    </div>
+                
+                </div>
+
+                <div class="work">
+                    <img src="Image/Tools Technologies.png">
+
+                    <div class="layer">
+                        <h3>FrontEnd Development</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore vitae necessitatibus hic
+                            aperiam doloremque, autem magni officia nisi fugit dignissimos cum illum nulla aspernatur
+                            magnam sequi expedita ad velit ullam?</p>
+                            <button type="button" class="btn btn-primary">More Details</button>
+                    </div>
+
+                </div>
+
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+
+    <!-------------------Contact Us-------------------->
+    <div class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Us</h1>
+                    <p><i class="fa-regular fa-envelope"></i> hdchamindaindikakumara@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 0761156136</p>
+                    <div class="social-icon">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.reddit.com/"><i class="fa-brands fa-reddit"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script>
+        var mytitles = document.getElementsByClassName("my-titles");
+        var mycontent = document.getElementsByClassName("my-content");
+
+        function openttab(myname) {
+            for (var i = 0; i < mytitles.length; i++) {
+                mytitles[i].classList.remove("active-link");
+            }
+            for (var i = 0; i < mycontent.length; i++) {
+                mycontent[i].classList.remove("active-content");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(myname).classList.add("active-content")
+        }
+    </script>
+
+
+</body>
+
+</html>
